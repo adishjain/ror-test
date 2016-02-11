@@ -14,14 +14,14 @@
       <img class="media-object" src="<%= q.gravatar %>" alt="Gravatar loading" height="64px"width="64px">
     </a>
   </div>
-</div>
+
 
   <div class="media-body">
     <h4 class="media-heading"><%= q.email %> asked:</h4>
     <%= q.body %>
   </div>
 </div>
-
+</div>
 
 <% end %>
 

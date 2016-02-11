@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-	@questions = Question.all
+	@questions = Question.order(Created_at: :desc).all
   end
   def about
   end
