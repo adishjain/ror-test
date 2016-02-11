@@ -1,0 +1,37 @@
+<div class="container">
+<div class="lead well">
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="<%= @question.gravatar %>" alt="what" height="64px"width="64px">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= @question.email %> asked:</h4>
+    <%= @question.body %>
+  </div>
+</div>
+</div>
+
+
+<div>
+<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#new-answer-modal">Submit new answer</a>
+</div>
+
+<%= render 'home/new_answer_form' %>
+
+<%= @question.answers.find_each do |answer| %>
+
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="<%= answer.gravatar %>" alt="what" height="64px"width="64px">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= answer.email %> asked:</h4>
+    <%= answer.body %>
+  </div>
+</div>
+<% end %>
+<div>After this or before this? </div>
