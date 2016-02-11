@@ -4,51 +4,25 @@
 </div>
 </div>
 
+
+<% @questions.each do |q| %>
+
+<div class="media">
 <div class="container">
-<div class="media">
   <div class="media-left media-middle">
     <a href="#">
-      <img class="media-object" src="images/adish" alt="..." height="64px"width="64px">
+      <img class="media-object" src="<%= q.gravatar %>" alt="Gravatar loading" height="64px"width="64px">
     </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">Something part 0</h4>
-    Plain template text.
-	<div>
-  <a href="/questions/12" class="btn btn-success btn-xs">View answers</a>
-  </div>
   </div>
 </div>
 
-<div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object" src="images/adish" alt="..." height="64px"width="64px">
-    </a>	
-  </div>
   <div class="media-body">
-    <h4 class="media-heading">Something part 1</h4>
-    Plain template text.
-	<div>
-  <a href="/questions/12" class="btn btn-success btn-xs">View answers</a>
-  </div>
+    <h4 class="media-heading"><%= q.email %> asked:</h4>
+    <%= q.body %>
   </div>
 </div>
 
-<div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object" src="images/adish" alt="..." height="64px"width="64px">
-    </a>
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">Something part 2</h4>
-    Plain template text.
-<div>
-  <a href="/questions/12" class="btn btn-success btn-xs">View answers</a>
-  </div>
-  </div>
-</div>
-</div>
-	</div>
+
+<% end %>
+
 
