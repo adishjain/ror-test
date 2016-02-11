@@ -1,2 +1,54 @@
-<h1>Welcome All</h1>
-<p>I am Adish Jain</p>
+<div class="lead well">
+<div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+</div>
+
+<div class="container">
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="images/adish" alt="..." height="64px"width="64px">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Something part 0</h4>
+    Plain template text.
+	<div>
+  <a href="/questions/12" class="btn btn-success btn-xs">View answers</a>
+  </div>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="images/adish" alt="..." height="64px"width="64px">
+    </a>	
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Something part 1</h4>
+    Plain template text.
+	<div>
+  <a href="/questions/12" class="btn btn-success btn-xs">View answers</a>
+  </div>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="images/adish" alt="..." height="64px"width="64px">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Something part 2</h4>
+    Plain template text.
+<div>
+  <a href="/questions/12" class="btn btn-success btn-xs">View answers</a>
+  </div>
+  </div>
+</div>
+</div>
+	</div>
+
