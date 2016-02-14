@@ -30,7 +30,7 @@
       
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" formaction="/questions" formmethod="POST" class="btn btn-primary">Submit</button>
+        <button type="submit" formaction="/answers" formmethod="POST" class="btn btn-primary">Submit</button>
       </div>
 <% end %>
     </div><!-- /.modal-content -->
